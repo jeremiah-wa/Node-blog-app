@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const blogRoutes = require('./routes/blogRoutes')
 
 // You will need to change the arguments to match your own mongo credientials 
-const dbURI = 'mongodb+srv://[username]:[password]@nodeapp.pjqfx.mongodb.net/[clustername]?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://[username]:[password]@[clustername].pjqfx.mongodb.net/[clustername]?retryWrites=true&w=majority'
 mongoose.connect(dbURI,{ useNewUrlParser: true, useUnifiedTopology: true }) 
   .then(res => app.listen(3000))
   .catch( err => console.log(err));
